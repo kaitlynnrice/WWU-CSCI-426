@@ -1,0 +1,201 @@
+body {
+  background-color: #F5F0F0;
+  font-family: Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* header */
+header {
+  background-color: #202020;
+  width: 100%;
+  display: inline-block;
+}
+
+#logo {
+  width: 10%;
+}
+
+#logo img {
+  width: 60%;
+  padding: 15px 30px;
+}
+
+#heading {
+  color: #FFFFFF;
+  font-size: 4vw;
+  font-weight: 700;
+  padding: 25px;
+  width: 50%;
+}
+
+nav {
+  width: 25%;
+  padding: 45px 55px 45px 0;
+}
+
+nav img {
+  width: 10%;
+  float: right;
+  padding: 0 20px;
+}
+
+/* search form */
+#search {
+  margin: 2% 15%;
+  width: 80%;
+}
+
+#search fieldset {
+  width: 45%;
+  border: none;
+}
+
+#search legend {
+  color: #00285C;
+  font-size: 3em;
+}
+
+#search legend img {
+  width: 10%;
+}
+
+#search label {
+  font-size: 1.5em;
+  margin: 5%;
+}
+
+#search #start {
+  font-size: 1em;
+  margin: 0 0 0 5%;
+}
+
+#search #end {
+  font-size: 1em;
+  margin: 0 0 0 15px;
+}
+
+#search form div {
+  margin: 0 0 6% 0;
+}
+
+#search select, option, input {
+  margin: 1.5% 0 1.5% 4%;
+}
+
+#search #filter_rooms {
+  text-align: left;
+}
+
+#search #filter_rooms legend {
+  text-align: center;
+}
+
+#search .filters {
+  width: 50%;
+  float: left;
+  font-size: 1.15em;
+}
+
+#search input[type="submit"] {
+  clear: both;
+  font-size: 32px;
+  width: 6%;
+  margin: 0 40%
+}
+
+/* View choices */
+#choices {
+  width: 80%;
+  margin: 0 10%;
+}
+
+#choices span {
+  font-size: 1.5em;
+  padding: 0 10px;
+}
+
+#name {
+  color: #00285C;
+  width: 15%;
+}
+
+#name img {
+  margin: 0 0 0 5%;
+}
+
+#date {
+  width: 15%;
+}
+
+#view {
+  width: 15%;
+}
+
+#view select {
+  font-size: 20px;
+  width: 70%;
+  margin: 13% 15%;
+}
+
+#reserve_room {
+  width: 15%;
+}
+
+#reserve_btn {
+  width: 60%;
+  font-size: 24px;
+  padding: 5% 0;
+  margin: 5% 20%;
+  background-color: #00285C;
+  color: #FFFFFF;
+}
+
+#user_filters {
+  width: 30%;
+}
+
+/* reserve */
+#reservation {
+  width: 30%;
+  margin: 10% 35%;
+  border: 1px solid black;
+  font-size: 1.5em;
+  color: #00285C;
+}
+
+#reservation h1 {
+  text-align: center;
+}
+
+#reserve {
+  width: 100%;
+}
+
+#reserve fieldset {
+  border: none;
+}
+
+#reserve input {
+  width: 96%;
+  margin: 2%;
+  font-size: .75em;
+}
+
+#reserve input[type="submit"] {
+  font-size: 24px;
+  width: 20%;
+  margin: 0 40%;
+  background-color: #00285C;
+  color: #FFFFFF;
+}
