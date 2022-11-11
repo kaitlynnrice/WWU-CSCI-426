@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Room Finder - Reservations</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Western Washington University Room Finder">
+        <meta name="keywords" content="HTML, PHP, SQL, WWU, Western Washington University">
+        <meta name="author" content="Isak Ogurkow, Isabel Rodriguez, Kaitlyn Rice , Natalie Haass">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        
+        <!-- nav bar -->
+      <div class="wrapper">
+      <header>
+          <span id="logo" class="left">
+            <a href="search.php" alt="search"><img src="images/logo.png" alt="Western Washington University logo"></a>
+          </span>
+          <span id="heading" class="left">
+            Western Room Finder
+          </span>
+          <nav class="right">
+            <a href="Favorites.html"><img src="images/heart.png" alt="favorites"></a>
+            <a href="Reservation.html"><img src="images/calender.png" alt="reservations"></a>
+            <a href="search.php"><img src="images/Search.png" alt="search"></a>
+          </nav>
+        </header>
+      </div>
+
+      <div class="row">
+            <!-- Reservations -->
+            <div class="column">
+                <div class="centeredColumn">
+                    <span id="pageTitle">Reservations</span>
+                    <br><hr style="float:left; width: 92%; margin-top: -1px;">
+
+                    <!-- loop through: reserved rooms (include bottom line divider in loop)-->
+                    <div class="roomInfo">
+                        <span class="roomID">CF 420</span>
+                        <img class="coloredPin" src="images/Dimond_alt_duotone.png" alt="blue pin">
+                        <br>
+                        <span class="nextReservation">Next Reservation: <strong>Today at 3:30pm </strong></span>
+                        <img class="roomArrow" src="images/Arrow_alt_lright (1).png" alt="left arrow">
+                        <br>
+                        <div class="tagWrapper">
+                            <div class="tagGroup">
+                                <!-- loop through: room tags -->
+                                <span class="tag">Capacity: 35</span>
+                                <span class="tag">Projector</span>
+                                <span class="tag">Whiteboard</span>
+                                <span class="tag">Computers</span>
+                            </div>
+                        </div>
+                        <span class="remove">remove</span>
+                    </div>
+                    <hr class="lineDivider">
+
+
+                    <!-- JUST USED TO SEE WHAT DISPLAY OF MULTIPLE ROOMS LOOK LIKE (DELETE) -->
+                    <div class="roomInfo">
+                        <span class="roomID">CF 421</span>
+                        <img class="coloredPin" src="images/Dimond_alt_duotone.png" alt="blue pin">
+                        <br>
+                        <span class="nextReservation">Next Reservation: <strong>Tomorrow at 3:30pm </strong></span>
+                        <img class="roomArrow" src="images/Arrow_alt_lright (1).png" alt="left arrow">
+                        <br>
+                        <div class="tagWrapper">
+                            <div class="tagGroup">
+                                <span class="tag">Capacity: 10</span>
+                                <span class="tag">Projector</span>
+                                <span class="tag">Whiteboard</span>
+                            </div>
+                        </div>
+                        <span class="remove">remove</span>
+                    </div>
+                    <hr class="lineDivider">
+
+                </div>
+            </div>
+                
+            <!-- map -->
+      </div>
+
+
+    </body>
+</html>
