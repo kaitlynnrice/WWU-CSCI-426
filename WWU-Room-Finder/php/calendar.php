@@ -105,26 +105,24 @@ for ( $day = 1; $day <= $day_count; $day++, $str++) {
 ?>
 
 <div class="container" id="calendar">
-    <h2 style="text-align: center;">
-      <a href="?m_y=<?php echo $prev; ?>" style="float: left;">&lt;</a> 
-      <?php echo $html_title; ?>
-      <a href="?m_y=<?php echo $next; ?>" style="float: right;">&gt;</a>
-    </h2>
-    <table class="table table-bordered">
-      <tr>
-        <th>S</th>
-        <th>M</th>
-        <th>T</th>
-        <th>W</th>
-        <th>T</th>
-        <th>F</th>
-        <th>S</th>
-      </tr>
-      <?php foreach ($weeks as $week) {
+  <h2 style="text-align: center;">
+    <a href="?m_y=<?php echo $prev; ?>" style="float: left;">&lt;</a>
+    <?php echo $html_title; ?>
+    <a href="?m_y=<?php echo $next; ?>" class="float-end">&gt;</a>
+    <a href="?m_y=<?php echo $today; ?>"  class="btn btn-light float-end me-2" type="button">today</a>
+  </h2>
+  <table class="table table-bordered">
+    <tr>
+      <th>S</th>
+      <th>M</th>
+      <th>T</th>
+      <th>W</th>
+      <th>T</th>
+      <th>F</th>
+      <th>S</th>
+    </tr>
+    <?php foreach ($weeks as $week) {
         echo $week;
-      } ?>
-    </table>
-  </div>
-</body>
-
-</html>
+    } ?>
+  </table>
+</div>
