@@ -1,0 +1,12 @@
+/* LINKS */
+svg:hover {
+  fill: red;
+}
+
+
+/* map */
+#map img {
+  max-width: 100%;
+  border: 1px black solid;
+}
+
