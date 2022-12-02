@@ -1,0 +1,204 @@
+<div class="px-2 py-2 border-bottom container-fluid">
+
+  <!-- condensed search -->
+  <div class="form-group  d-block d-xl-none text-center dropdown-center">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Search
+    </button>
+    
+    <!-- form -->
+    <div class="dropdown-menu">
+      <form action="availabilities.php" method="GET" class="p-3 justify-content-start">
+        <!-- building -->
+        <div class="col-auto mb-2">
+          <label for="building" class="form-label select-label">Building</label>
+          <div class="input-group">
+            <select class="form-select" id="building" aria-label="select building">
+              <option selected>All</option> 
+              <option value="Communications Facility (CF)">Communications Facility (CF)</option>
+            </select>
+          </div>
+        </div>
+  
+        <!-- type -->
+        <div class="col-auto mb-2">
+          <label for="rm-type" class="form-label select-label">Room Type</label>
+          <div class="input-group">
+            <select class="form-select" id="rm-type" aria-label="select rooms">
+              <option selected>All</option>
+              <option value="Lab">Lab</option>
+              <option value="Classroom">Classroom</option>
+              <option value="Lecture Hall">Lecture Hall</option>
+            </select>
+          </div>
+        </div>
+  
+        <!-- room -->
+        <div class="col-auto mb-2">
+          <label for="rm-num" class="form-label select-label">Room Number</label>
+          <div class="input-group">
+            <select class="form-select" id="rm-num" aria-label="select room num">
+              <option selected>All</option>
+              <option value="CF 420">CF 420</option>
+              <option value="CF 421">CF 421</option>
+            </select>
+          </div>
+        </div>
+  
+        <!-- date -->
+        <div class="col-auto mb-2">
+          <label for="datepicker" class="form-label select-label">Date</label>
+          <input type="date" class="form-control" id="datepicker" value="8:00">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="recurring">
+            <label class="form-check-label" for="recurring">
+              Re-occurring
+            </label>
+          </div>
+        </div>
+  
+        <!-- times -->
+        <div class="col-auto">
+          <label for="start" class="form-label select-label">Start Time</label>
+          <input type="time" class="form-control" id="start" value="8:00">
+        </div>
+        <div class="col-auto">
+          <label for="end" class="form-label select-label">End Time</label>
+          <input type="time" class="form-control" id="end" value="9:00">
+        </div>
+  
+        <!-- capacity -->
+        <div class="col-auto">
+          <label for="cap" class="form-label select-label">Capacity</label>
+          <input type="number" min="1" max="200" class="form-control input-sm" id="cap" value="35">
+        </div>
+  
+        <!-- filters -->
+        <div class="col-auto mb-2">
+          <div class="input-group">
+            <div class="btn-group">
+              <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Filters
+              </button>
+              <div class="dropdown-menu">
+                <select class="form-select" id="filters" aria-label="select filters" multiple="multiple">
+                  <option selected>All</option>
+                  <option value="Computers">Computers</option>
+                  <option value="Projectors">Projectors</option>
+                  <option value="Whiteboards">Whiteboards</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- submit -->
+        <div class="col-auto mb-2">
+          <button type="submit" class="btn btn-primary mb-3">Find Rooms</button>
+        </div>
+        
+      </form>
+    </div>
+
+  </div>
+  
+  
+    
+  <!-- large search -->
+  <form action="availabilities.php" method="GET" class="d-none d-xl-block">
+    <div class="row g-3 d-flex justify-content-center">
+      <!-- building -->
+      <div class="col-auto">
+        <label for="building" class="form-label select-label">Building</label>
+        <div class="input-group">
+          <select class="form-select" id="building" aria-label="select building">
+            <option selected>All</option> 
+            <option value="Communications Facility (CF)">Communications Facility (CF)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- type -->
+      <div class="col-auto">
+        <label for="rm-type" class="form-label select-label">Room Type</label>
+        <div class="input-group">
+          <select class="form-select" id="rm-type" aria-label="select rooms">
+            <option selected>All</option>
+            <option value="Lab">Lab</option>
+            <option value="Classroom">Classroom</option>
+            <option value="Lecture Hall">Lecture Hall</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- room -->
+      <div class="col-auto">
+        <label for="rm-num" class="form-label select-label">Room Number</label>
+        <div class="input-group">
+          <select class="form-select" id="rm-num" aria-label="select room num">
+            <option selected>All</option>
+            <option value="CF 420">CF 420</option>
+            <option value="CF 421">CF 421</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- date -->
+      <div class="col-auto">
+        <label for="datepicker" class="form-label select-label">Date</label>
+        <input type="date" class="form-control" id="datepicker" value="8:00">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="recurring">
+          <label class="form-check-label" for="recurring">
+            Re-occurring
+          </label>
+        </div>
+      </div>
+
+      <!-- times -->
+      <div class="col-auto">
+        <label for="start" class="form-label select-label">Start Time</label>
+        <input type="time" class="form-control" id="start" value="8:00">
+      </div>
+      <div class="col-auto">
+        <label for="end" class="form-label select-label">End Time</label>
+        <input type="time" class="form-control" id="end" value="9:00">
+      </div>
+
+      <!-- capacity -->
+      <div class="col-auto">
+        <label for="cap" class="form-label select-label">Capacity</label>
+        <input type="number" min="1" max="200" class="form-control input-sm" id="cap" value="35">
+      </div>
+
+      <!-- filters -->
+      <div class="col-auto">
+        <div class="input-group">
+          <div class="btn-group">
+            <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Filters
+            </button>
+            <div class="dropdown-menu">
+              <select class="form-select" id="filters" aria-label="select filters" multiple="multiple">
+                <option selected>All</option>
+                <option value="Computers">Computers</option>
+                <option value="Projectors">Projectors</option>
+                <option value="Whiteboards">Whiteboards</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- submit -->
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Find Rooms</button>
+      </div>
+    </div>
+  </form>
+
+</div> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+
