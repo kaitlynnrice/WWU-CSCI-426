@@ -1,0 +1,38 @@
+/* LINKS */
+.noFavIcon :hover {
+  fill: black;
+}
+
+.favIcon :hover {
+  fill: none;
+  outline: black;
+}
+
+
+/* map */
+#map img {
+  max-width: 100%;
+  border: 1px black solid;
+}
+
+.tag {
+  font-size: 1em;
+  padding: 0 15px 0 15px;
+  text-align: center;
+  border-radius: 25px;
+  background: #EAEDEF;
+  color: #007AC8;
+  padding: 0 10px 0 10px;
+  margin: 4px;
+}
+.tagGroup {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px;
+}
+.tagWrapper {
+  width: 40%;
+  padding-top: 10px;
+}
+
+
