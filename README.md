@@ -5,7 +5,7 @@ desription
 
 ## Authors
 
-- [@kaitrice] (https://www.github.com/kaitrice)
+- [@kaitrice](https://www.github.com/kaitrice)
 
 
 ## Tech Stack
